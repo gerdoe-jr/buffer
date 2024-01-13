@@ -1,6 +1,6 @@
 [package]
 name = "buffer"
-version = "0.1.9"
+version = "0.1.10"
 authors = ["Tobias Bucher <tobiasbucher5991@gmail.com>"]
 license = "MIT/Apache-2.0"
 repository = "https://github.com/tbu-/buffer"
@@ -8,5 +8,5 @@ description = "Safe, write-only, generics-free buffer abstraction"
 readme = "README.md"
 
 [dependencies]
-arrayvec = "0.5.2"
-mac = "0.0.2"
+arrayvec = "0.7"
+mac = "0.1"

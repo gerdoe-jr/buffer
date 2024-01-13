@@ -12,7 +12,7 @@ use with_buffer;
 pub unsafe fn read_buffer_ref<'d, 's, T: Read>(reader: &mut T, mut buf: BufferRef<'d, 's>)
     -> io::Result<&'d [u8]>
 {
-    let read = try!(reader.read(buf.uninitialized_mut()));
+    let read = reader.read(buf.uninitialized_mut())?;
     buf.advance(read);
     Ok(buf.initialized())
 }
